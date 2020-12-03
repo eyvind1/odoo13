@@ -1,0 +1,40 @@
+
+<odoo>
+    <record id="view_tree_colegio" model="ir.ui.view">
+        <field name = "name">view.tree.colegio</field>
+        <field name = "model">colegiotb</field>
+        <field name = "arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name = "edad"/>
+                <field name = "cellphone"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>  
+
+    <record id="view_form_colegio" model="ir.ui.view">
+        <field name = "name">view.form.colegio</field>
+        <field name = "model">colegiotb</field>
+        <field name = "arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" string="Nombre"/>
+                        <field name = "edad" string = "Edad"/>
+                        <field name = "cellphone" string = "Celular"/>
+                        <field name="status" string="Profesión"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>  
+
+    <record id = "action_view_colegio" model="ir.actions.act_window">
+        <field name = "name">Colegio</field>
+        <field name = "res_model">colegiotb</field>
+        <field name = "view_mode">tree,form</field>
+    </record>  
+
+    <menuitem id="menu_colegio" parent ="" action="colegiomodule.action_view_colegio"/>
+</odoo>
