@@ -1,3 +1,4 @@
+# -*- coding: utf8 -*-
 {
     "name":"Modulo Colegio",
     "description":"Aplicacion demo",
