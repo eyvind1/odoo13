@@ -4,9 +4,13 @@
     "description":"Aplicacion demo",
     "data":[
         'wizards/create_app.xml',
-        'views/colegio.xml',
         'views/matricula.xml',
-        'security/security.xml'
+        'views/colegio.xml',
+        'security/security.xml',
+        'reports/school_card.xml',
+        'reports/report.xml',
+        'reports/report_matricula.xml',
+        
     ]
 
 }

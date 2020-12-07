@@ -7,9 +7,11 @@
         <field name = "arch" type="xml">
             <form string="Crear Recibo">
                 <group class="oe_title">
+                    <field name = "idm"/>
                     <field name = "app_date"/>
                 </group>
                 <footer>
+                    <button name = "print_matricula" string="Imprimir" type="object" class="btn-primary"/>
                     <button name = "create_app" string="Crear" type="object" class="btn-primary"/>
                     <button string = "Cancel" class="btn-secondary" special="cancel"/>
                 </footer>

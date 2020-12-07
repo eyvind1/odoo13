@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    
+    <report
+        id = "report_card"
+        string = "Reporte"
+        model = "colegiotb"
+        report_type = "qweb-pdf"
+        name = "colegiomodule.report_person"
+        file = "colegiomodule.report_person"/>
+    
+    <!-- <report
+        id = "report_app_xls"
+        string = "Matricula Excel"
+        model = "colegiotb"
+        report_type = "xlsx"
+        name = "colegiomodule.reporte_colegio_xls"
+        file = "colegiomodule.reporte_colegio_xls"/> -->
+    <report
+        id = "report_matricula"
+        string = "Reporte M"
+        model = "reporte.matricula"
+        report_type = "qweb-pdf"
+        name = "colegiomodule.matricula_report"
+        file = "colegiomodule.matricula_report"/>
+</odoo>

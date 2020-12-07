@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_colegio,access.colegio,om_hospital.model_hospital_lab,om_hospital.group_hospital_lab,1,1,1,1
+access_matricula,access.matricula,model_hospital_patient,,1,1,1,1
