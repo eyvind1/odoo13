@@ -3,7 +3,9 @@
     "name":"Modulo Colegio",
     "description":"Aplicacion demo",
     "data":[
-        'views/view.xml',
+        'wizards/create_app.xml',
+        'views/colegio.xml',
+        'views/matricula.xml',
         'security/security.xml'
     ]
 

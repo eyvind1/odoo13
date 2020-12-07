@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- tree view -->
-    <record id="view_tree_colegio" model="ir.ui.view">
-        <field name = "name">view.tree.colegio</field>
+    <record id="view_tree_colegio2" model="ir.ui.view">
+        <field name = "name">view.tree.colegio2</field>
         <field name = "model">colegiotb</field>
         <field name = "arch" type="xml">
             <tree>
@@ -16,9 +16,9 @@
         </field>
     </record>  
     
-    <!-- form view -->
-    <record id="view_form_colegio" model="ir.ui.view">
-        <field name = "name">view.form.colegio</field>
+    <!-- form view of matricula-->
+    <record id="view_form_colegio2" model="ir.ui.view">
+        <field name = "name">view.form.colegio2</field>
         <field name = "model">colegiotb</field>
         <field name = "arch" type="xml">
             <form>
@@ -48,30 +48,13 @@
         </field>
     </record>  
 
-    <record id = "action_view_colegio" model="ir.actions.act_window">
-        <field name = "name">Colegio</field>
-        <field name = "res_model">colegiotb</field>
-        <field name = "view_mode">tree,form</field>
-        <field name = "help" type="html">
-            <p class="o_view_nocontent_smiling_face">
-                Cree su primer formulario!
-            </p>
-        </field>
-    </record>  
+   
 
     <record id = "action_view_matriculas" model="ir.actions.act_window">
         <field name = "name">Matrículas</field>
         <field name = "res_model">colegiotb</field>
         <field name = "view_mode">tree,form</field>
     </record> 
-
-    <record id = "action_view_cursos" model="ir.actions.act_window">
-        <field name = "name">Cursos</field>
-        <field name = "res_model">colegiotb</field>
-        <field name = "view_mode">tree,form</field>
-    </record> 
-
-    <menuitem id="menu_colegio" parent ="" action="colegiomodule.action_view_colegio"/>
-    <menuitem id="menu_matriculas" parent="menu_colegio" action="colegiomodule.action_view_matriculas"/>
-    <menuitem id="menu_cursos" parent="menu_colegio" action="colegiomodule.action_view_cursos"/>
+    
+    <menuitem id="menu_matriculas" parent="menu_colegio" action="colegiomodule.action_view_matriculas"/> 
 </odoo>
